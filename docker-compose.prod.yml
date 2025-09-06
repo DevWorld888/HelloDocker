@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .                      # usa tu Dockerfile
+    image: youruser/node-hello:latest
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+    ports:
+      - "3000:3000"
+    restart: unless-stopped

@@ -1,0 +1,13 @@
+services:
+  api:
+    image: node:20-alpine         # usa Node oficial
+    working_dir: /app             # dentro del contenedor
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - "3000:3000"               # host:container
+    volumes:
+      - .:/app                    # monta tu código en el contenedor
+      - /app/node_modules         # evita que tu node_modules local pise el del contenedor
+    environment:
+      - PORT=3000
+      - NODE_ENV=development
