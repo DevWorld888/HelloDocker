@@ -135,6 +135,4 @@ docker rmi <id>      # borrar imagen
 
 ---
 
-👉 Este README es profesional y portable.  
-¿Quieres que también te prepare un **workflow de GitHub Actions (`.github/workflows/docker.yml`)** para que cada vez que hagas push a `main`, se construya tu imagen y se publique automáticamente en **GitHub Container Registry (GHCR)**?
-```
+
